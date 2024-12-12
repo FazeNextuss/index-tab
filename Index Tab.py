@@ -47,7 +47,7 @@ def date_num_to_txt(date):
         "Novembre", "Décembre"
     ]
     tab = unFormatDDN(date)
-    dateLetters = str(tab[0]) + " " + str(mois[tab[1]-1]) +  " " + str(tab[2])
+    dateLetters = tab[0], mois[tab[1]-1], tab[2]
     return dateLetters
 
 def moyenneTab(notes):
