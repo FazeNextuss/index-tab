@@ -41,7 +41,11 @@ def unFormatDDN(date):
     return ddn
 
 def date_num_to_txt(date):
-    mois = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Décembre"]
+    mois = [
+        "Janvier", "Février", "Mars", "Avril", "Mai",
+        "Juin", "Juillet", "Aout", "Septembre", "Octobre", 
+        "Novembre", "Décembre"
+    ]
     tab = unFormatDDN(date)
     dateLetters = str(tab[0]) + " " + str(mois[tab[1]-1]) +  " " + str(tab[2])
     return dateLetters
