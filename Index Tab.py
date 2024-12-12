@@ -70,11 +70,13 @@ def concatenation(tab):
             concat += " - " + champs
     return concat
 
+def tab_min(tab1, tab2):
+    return [min(tab1[i], tab2[i]) for i in range(len(tab1))]
 
-        
-        
+def inverser_tableau(t):
+    inverse = []
+    while t:
+        inverse.append(t.pop())
+    return inverse
 
 
-    
-        
-        
